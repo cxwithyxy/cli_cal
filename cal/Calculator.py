@@ -14,6 +14,7 @@ class Calculator():
         ui = Ui()
         ui.add_text(self.cli.after_fix_left_brackets)
         ui.add_text(result)
+        ui.set_clipboard_content(result)
         ui.run()
 
     def cal(self, expr_str: str):
