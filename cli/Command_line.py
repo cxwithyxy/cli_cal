@@ -3,6 +3,8 @@ import re
 
 class Command_line():
 
+    after_fix_left_brackets:str
+
     def get_expr_from_argus(self) -> str:
         """从命令行参数中构成初步的表达式"""
         argus = sys.argv[1:]
@@ -17,6 +19,7 @@ class Command_line():
         if(count_should_add > 0):
             for i in range(0, count_should_add):
                 expr_str = "(" + expr_str
+        self.after_fix_left_brackets = expr_str
         return expr_str
 
     def percent_change(self, expr_str: str) -> str:
