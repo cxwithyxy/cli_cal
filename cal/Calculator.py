@@ -21,5 +21,4 @@ class Calculator():
         expr = sympify(expr_str)
         result = expr.evalf()
         result = round(result, 9)
-        print(result)
         return result
