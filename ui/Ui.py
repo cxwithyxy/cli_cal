@@ -14,7 +14,8 @@ class Ui():
         self.main_stage = tkinter.Toplevel(self.app)
         self.main_stage.attributes("-toolwindow", 1)
         self.main_stage.wm_attributes("-topmost", 1)
-        self.main_stage.title("cli_cal")
+        self.main_stage.title("cli_cal v1.201907251616")
+        self.main_stage.bind("close", self.close)
         self.app.withdraw()
     
     def close(self, *argus):
