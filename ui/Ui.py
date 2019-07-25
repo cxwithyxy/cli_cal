@@ -15,7 +15,7 @@ class Ui():
         self.main_stage.attributes("-toolwindow", 1)
         self.main_stage.wm_attributes("-topmost", 1)
         self.main_stage.title("cli_cal v1.201907251616")
-        self.main_stage.bind("close", self.close)
+        self.main_stage.protocol("WM_DELETE_WINDOW", self.close)
         self.app.withdraw()
     
     def close(self, *argus):
