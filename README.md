@@ -24,7 +24,7 @@
 
 #### 下载
 
-1. 进入[发布页面](https://github.com/cxwithyxy/cli_cal/releases)
+1. 进入 [gitee的发布页面](https://gitee.com/cxwithyxy/cli_cal/releases) 或者 [github发布页面](https://github.com/cxwithyxy/cli_cal/releases)
 2. 下载 cal.7z
 3. 用压缩工具解压 cal.7z 到你想放的位置
 
@@ -52,6 +52,8 @@
 
 
 ## 开发
+
+> 注：建议使用 virtualenv ，虚拟环境能避免各种项目依赖包和系统的依赖包搞乱
 
 #### 安装依赖
 
